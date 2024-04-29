@@ -18,7 +18,7 @@ int main(){
         exit(0);
     }
     h=(b-a)/n;
-    sum=f(a)-f(a+n*h);
+    sum=f(a)+f(a+n*h);
     for(i=1;i<=n-1;i+=2)
     sum+=4*f(a+i*h)+2*f(a+(i+1)*h);
     sum*=h/3.;
